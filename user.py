@@ -1,4 +1,4 @@
-def greet(to):
+def greet(to = "world"):
     print("\nIt's my pleasure ", to , "!\n" , sep = "")
     # greets user with their name
 
