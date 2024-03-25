@@ -1,20 +1,15 @@
+def greet(to):
+    print("\nIt's my pleasure ", to , "!\n" , sep = "")
+    # greets user with their name
 
 user = input("\nWhat may I call you?\n=> ")
-
 # asks user for name
 
 user = user.strip().title()
-
 # gets rid of spaces
 #capitalizes first letter of each word
 
-print(f"\nIt's my pleasure {user}!\n")
-# print("\nIt's my pleasure" + user + "!\n")
-# print("\nIt's my pleasure " , user , "!\n", sep = "")
-# print("\nIt's my pleasure ", end = "")
-# print(user, end = "!")
-
-# greets user with their name
+greet(user)
 
 """
 Feel free to edit! O w O
