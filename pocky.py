@@ -1,17 +1,19 @@
 import random
 def main():
-    input("\nI'm sorta lazy rn..\nmind buying snacks for me?")
+    print("\nI'm sorta lazy rn..\nmind buying snacks for me?")
     print("\n> 1 | Sure, why not. Not like I have anything better to do.")
     print("> 2 | Beat it! You've got legs don't you?\n")
     mode = input("=> ")
     # gives two choices to choose how they continue the story
 
     if mode == "1":
+        print("\n> Sure, why not. Not like I have anything better to do.")
         n = (random.randrange(11))
         input("\nthxx, ur the bezzt.")
         input("\n> So wa da yaa want?")
         input("\npocky..")
         input("\n> How many?")
+        # chooses a random number from 1-9
         # tells the player to guess
 
         g = "0"
@@ -20,6 +22,7 @@ def main():
         # gives instructions & calls the guessing function 
 
     else:
+        print("\n> Beat it! You've got legs don't you?\n")
         quit()
         # quits the code if they input anything else than 1
 
@@ -39,10 +42,14 @@ def play(x):
             if x == n:
                 print("\nyup, and you're payin for it!\n")
                 quit()
-            if x >= n:
+                # ends loop if their guess is correct
+
+
+            elif x > n:
                 print("\nnah, unless you're having some too ofc")
             else:
                 print("\nmy tummy wummy says more")
+            # if their guess is too big or too small it will tell
 
 
 main()
